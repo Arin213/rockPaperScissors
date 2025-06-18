@@ -41,14 +41,21 @@ This is a simple Rock-Paper-Scissors game implemented in JavaScript that runs in
 4. Follow the prompts to play the game!
 
 ## 📌 Example Output
+```
 Enter your word: rock
 You lose! paper beats rock
 Enter your word: scissors
 You win! scissors beats paper
-...
+Enter your word: paper
+You lose! scissors beats paper
+Enter your word: rock
+You win! rock beats scissors
+Enter your word: scissors
+Draw!
 Wanna Continue again? no
 Your Score: 2
 Computer Score: 3
+```
 
 
 
