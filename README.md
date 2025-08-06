@@ -1,5 +1,5 @@
 # ROCK PAPER SCISSORS
-# Rock Paper Scissors Game (Console Version)
+# Rock Paper Scissors Game 
 
 This is a simple Rock-Paper-Scissors game implemented in JavaScript that runs in the browser console. The player plays against the computer, and the game continues in sets of five rounds with an option to play again.
 
