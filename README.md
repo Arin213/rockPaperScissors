@@ -61,7 +61,9 @@ the value.
    Compares the choices and updates the score based on the result.
 
 4. **Play Game**  
-   Repeats the game for 5 rounds, then asks the user if they want to play again. Ends the game and display the scores on page.
+   after the 5 rounds the final score get displayed and 
+   play button will be enabled and the 3 buttons of 
+   rock, paper and scissors will get disabled.
 
 ## 📌 Example Output
 ```
