@@ -5,12 +5,39 @@ This is a simple Rock-Paper-Scissors game implemented in JavaScript that runs in
 
 ## 📜 Features
 
-- Accepts human input via `prompt()`
-- Computer randomly selects Rock, Paper, or Scissors
-- Keeps track of both human and computer scores
-- Announces the result of each round
-- After 5 rounds, prompts the player to continue or end the game
-- Final scores are displayed when the player exits
+🎮 Gameplay
+- Player vs Computer game logic.
+
+- First to 5 wins ends the game.
+
+- Buttons for Rock, Paper, and Scissors with visual icons/images.
+
+- Dynamic round result display (win, lose, draw).
+
+- Final result announcement after 5 rounds.
+
+🧼 Game Reset
+- Clicking the Play button:
+
+- Starts or resets the game depending on round count.
+
+- Resets all scores and messages.
+
+Disables or enables buttons as appropriate.
+
+🧱 UI and DOM Structure
+All elements (buttons, messages) are dynamically created and appended using JavaScript.
+
+Messages for selections, round results, and final result are shown inside a dedicated message container.
+
+Uses SVG/webp/png icons to visually represent Rock, Paper, and Scissors.
+
+Prevents unnecessary re-adding of event listeners using a choiceMade flag.
+
+🛡️ Input Control
+Buttons are disabled when not in use to prevent premature clicks.
+
+The Play button becomes active only after 5 rounds are completed.
 
 ## 🧠 Game Logic
 
@@ -22,7 +49,10 @@ This is a simple Rock-Paper-Scissors game implemented in JavaScript that runs in
 ## 🔧 How It Works
 
 1. **Get Human Choice**  
-   Prompts the user to enter their choice: `rock`, `paper`, or `scissors`.
+- first the human choice is set to Null
+- and after the click play button, the 3 button will get enabled 
+- if the user clicke either (rock, paper or scissors) the human choice wll hold
+the value. 
 
 2. **Get Computer Choice**  
    Randomly selects one of the three options.
@@ -31,33 +61,32 @@ This is a simple Rock-Paper-Scissors game implemented in JavaScript that runs in
    Compares the choices and updates the score based on the result.
 
 4. **Play Game**  
-   Repeats the game for 5 rounds, then asks the user if they want to play again. Ends the game and prints the scores if the user chooses not to continue.
-
-## ▶️ How to Run
-
-1. Open your browser.
-2. Press `F12` or `Ctrl + Shift + I` to open the Developer Console.
-3. Paste the code into the console and press Enter.
-4. Follow the prompts to play the game!
+   Repeats the game for 5 rounds, then asks the user if they want to play again. Ends the game and display the scores on page.
 
 ## 📌 Example Output
 ```
-Enter your word: rock
+you selected : rock
+computer selected : paper
+You win! rock beats paper
+
+You selected : paper
+Computer selected: rock
+You win! paper beats rock
+
+You selected : rock
+Computer selected: rock
+It's a draw.
+
+You selected : rock
+Computer selected: paper
 You lose! paper beats rock
-Enter your word: scissors
-You win! scissors beats paper
-Enter your word: paper
-You lose! scissors beats paper
-Enter your word: rock
-You win! rock beats scissors
-Enter your word: scissors
-Draw!
-Wanna Continue again? no
-Your Score: 2
-Computer Score: 3
+
+You selected : scissors
+Computer selected: rock
+You lose! rock beats scissors
+
+Final Scores => You: 2 | Computer: 2
 ```
-
-
 
 ## 🚀 Future Improvements (Optional Ideas)
 

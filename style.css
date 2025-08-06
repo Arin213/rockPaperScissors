@@ -1,0 +1,95 @@
+body {
+    height: 100vh;
+    /* width: 500px; */
+    background-color:bisque 
+    
+   
+}
+
+.game {
+    /* max-width: 600px; */
+    display: flex;
+    border: 0.5px solid rgb(112, 79, 79);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background-color: rgb(235, 231, 238);
+    margin-left: 100px;
+    margin-right: 100px;
+
+  
+
+}
+#playDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+} 
+
+#messageDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(197, 184, 173);
+    border-radius: 6px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+  
+
+    /* height: 50%; */
+}
+
+#humanSelection, #computerSelection {
+    font-size: 20px;
+    font-weight: bold;
+    color:tomato
+}
+
+#finalMessage {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(112, 79, 79);
+    text-align: center;
+}
+#playdiv {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.rock, .paper, .scissors , .image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 0.1px solid rgb(112, 79, 79);
+    background-color: rgb(168, 161, 168);
+}
+
+#playButton {
+    padding: 10px 20px;
+    background-color: rgb(121, 82, 82);
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+button {
+    padding: 10px 20px;
+    font-size: 40px;
+    margin: 5px;
+    margin-bottom: 20px;
+    row-gap: 10px;
+    cursor: pointer;
+}

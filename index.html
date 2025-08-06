@@ -4,8 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <script src="./rockPaperScissors.js"></script>
+  <div class="game">
+    <h1>RPS: Rock Paper Scissors</h1>
+  </div>
+
+  
+  <script src="./rockPaperScissors.js"></script>
 </body>
 </html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 18px;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Rock Paper Scissors</h1>
+  <div>
+    <button onclick="playRound('rock')">Rock</button>
+    <button onclick="playRound('paper')">Paper</button>
+    <button onclick="playRound('scissors')">Scissors</button>
+  </div>
+
+  <div id="result"></div>
+  <div id="score">You: 0 | Computer: 0</div>
+  <div id="final"></div>
+
+  <script>
+    let humanScore = 0;
+    let computerScore = 0;
+    let count = 0;
+
+    function getComputerChoice() {
+      let value = Math.floor(Math.random() * 3);
+      return value === 0 ? "rock" : value === 1 ? "paper" : "scissors";
+    }
+
+    function playRound(humanChoice) {
+      if (count >= 5) return; // stop game after 5 rounds
+
+      const computerChoice = getComputerChoice();
+      let resultText = "";
+
+      if (
+        (humanChoice === "rock" && computerChoice === "scissors") ||
+        (humanChoice === "paper" && computerChoice === "rock") ||
+        (humanChoice === "scissors" && computerChoice === "paper")
+      ) {
+        humanScore++;
+        resultText = `You win! ${humanChoice} beats ${computerChoice}`;
+      } else if (humanChoice === computerChoice) {
+        resultText = `It's a draw! You both picked ${humanChoice}`;
+      } else {
+        computerScore++;
+        resultText = `You lose! ${computerChoice} beats ${humanChoice}`;
+      }
+
+      count++;
+      document.getElementById("result").textContent = resultText;
+      document.getElementById("score").textContent = `You: ${humanScore} | Computer: ${computerScore}`;
+
+      if (count === 5) {
+        showFinalResult();
+      }
+    }
+
+    function showFinalResult() {
+      let final = document.getElementById("final");
+      let winner = humanScore > computerScore ? "You Win! 🎉" :
+                   humanScore < computerScore ? "Computer Wins! 🤖" :
+                   "It's a Draw! 🤝";
+
+      final.innerHTML = `
+        <p>Final Result after 5 Rounds: ${winner}</p>
+        <button onclick="restartGame()">Play Again</button>
+      `;
+    }
+
+    function restartGame() {
+      humanScore = 0;
+      computerScore = 0;
+      count = 0;
+      document.getElementById("result").textContent = "";
+      document.getElementById("score").textContent = "You: 0 | Computer: 0";
+      document.getElementById("final").textContent = "";
+    }
+  </script>
+
+</body>
+</html> -->
